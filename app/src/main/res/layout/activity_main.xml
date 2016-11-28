@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.marc.calculadora.MainActivity">
+    tools:context="com.example.marc.calculadora.UI1">
 
     <EditText
         android:layout_width="250dp"
@@ -81,7 +81,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="430dp"
         android:layout_centerHorizontal="true"
-        android:id="@+id/result"/>
+        android:id="@+id/result"
+        android:numeric="decimal|integer|signed"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -106,5 +107,14 @@
         android:id="@+id/borrar"
         android:text="Borra!!"
         android:onClick="erase"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="400dp"
+        android:id="@+id/magic"
+        android:text="Quiero ver Magia!"
+        android:onClick="magic"/>
 
 </RelativeLayout>

@@ -1,11 +1,13 @@
 package com.example.marc.calculadora;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Interpolator;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -115,6 +117,16 @@ public class UI1 extends AppCompatActivity {
             toast.show();
 
         }
+
+    }
+
+    public void magic(View v){
+
+        Intent inb1 = new Intent(UI1.this, UI2.class);
+        startActivity(inb1);
+
+
+
 
     }
 
